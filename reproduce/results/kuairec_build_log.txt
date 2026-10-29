@@ -1,0 +1,7 @@
+﻿[kuairec] 读取 big_matrix ...
+  曝光 12530806, 用户 7176, 视频 10728, 正样本率 0.1505
+  split: {'train': 12516454, 'dev': 7176, 'test': 7176}
+  train: 12516454
+  dev: 7176
+  test: 7176
+[kuairec] 完成

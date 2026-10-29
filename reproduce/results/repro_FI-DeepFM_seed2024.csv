@@ -1,0 +1,2 @@
+model,seed,auc,logloss
+FI-DeepFM,2024,0.9245882639357677,0.3024861514568329

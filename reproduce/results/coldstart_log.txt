@@ -1,0 +1,35 @@
+﻿dense 特征已标准化: ['i_end_timestamp', 'i_start_timestamp']
+特征数: 20, feature_max: {'user_id': 5001, 'item_id': 1298307, 'i_country_c': 63, 'i_device_brand_c': 52, 'i_end_timestamp': 1, 'i_gender_c': 4, 'i_live_content_category_c': 5, 'i_live_operation_tag_c': 15, 'i_live_type_c': 6, 'i_start_timestamp': 1, 'i_streamer_id': 202601, 'u_accu_watch_live_cnt_c': 6, 'u_accu_watch_live_duration_c': 7, 'u_age_c': 8, 'u_country_c': 11, 'u_device_brand_c': 33, 'u_device_price_c': 6, 'u_fans_num_c': 7, 'u_follow_num_c': 5, 'u_gender_c': 3}
+device=cuda  user_cnt 中位数=487  (低于此为低活跃)
+训练子集: 1505371 / 3763427
+
+=== FI-DeepFM seed=42 ===
+    [42] ep1 AUC_all=0.9174 AUC_cold=0.9118 (78s)
+    [42] ep2 AUC_all=0.9116 AUC_cold=0.9011 (80s)
+  -> FI-DeepFM seed42: AUC_all=0.9174  AUC_cold=0.9118
+
+=== FI-DeepFM seed=2024 ===
+    [2024] ep1 AUC_all=0.9157 AUC_cold=0.9074 (88s)
+    [2024] ep2 AUC_all=0.8981 AUC_cold=0.8859 (75s)
+  -> FI-DeepFM seed2024: AUC_all=0.9157  AUC_cold=0.9074
+
+=== FI-DeepFM+冷启动加权 seed=42 ===
+    [42] ep1 AUC_all=0.9176 AUC_cold=0.9113 (77s)
+    [42] ep2 AUC_all=0.9151 AUC_cold=0.9053 (75s)
+  -> FI-DeepFM+冷启动加权 seed42: AUC_all=0.9176  AUC_cold=0.9113
+
+=== FI-DeepFM+冷启动加权 seed=2024 ===
+    [2024] ep1 AUC_all=0.9162 AUC_cold=0.9078 (73s)
+    [2024] ep2 AUC_all=0.8990 AUC_cold=0.8844 (73s)
+  -> FI-DeepFM+冷启动加权 seed2024: AUC_all=0.9162  AUC_cold=0.9078
+
+=======================================================
+                 auc_all  auc_cold
+model                             
+FI-DeepFM         0.9165    0.9096
+FI-DeepFM+冷启动加权   0.9169    0.9095
+
+整体 AUC 变化: +0.0004
+低活跃 AUC 变化: -0.0000  (未提升)
+
+明细已保存: E:\kuailive_project\KuaiLive直播推荐实验\reproduce\results\compare_coldstart.csv

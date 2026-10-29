@@ -1,0 +1,131 @@
+{
+  "hardware": {
+    "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "machine": "AMD64",
+    "torch": "2.6.0+cu124",
+    "threads": 10,
+    "cuda": true
+  },
+  "rows": [
+    {
+      "model": "FM",
+      "params": 97899231,
+      "emb_params": 97899230,
+      "batch": 1,
+      "latency_ms": 0.4940919999899051,
+      "us_per_row": 494.0919999899051
+    },
+    {
+      "model": "FM",
+      "params": 97899231,
+      "emb_params": 97899230,
+      "batch": 256,
+      "latency_ms": 1.5048380000007455,
+      "us_per_row": 5.878273437502912
+    },
+    {
+      "model": "FM",
+      "params": 97899231,
+      "emb_params": 97899230,
+      "batch": 8192,
+      "latency_ms": 10.203246666666626,
+      "us_per_row": 1.2455135091145784
+    },
+    {
+      "model": "Wide & Deep",
+      "params": 97981280,
+      "emb_params": 97899230,
+      "batch": 1,
+      "latency_ms": 0.5925514999944426,
+      "us_per_row": 592.5514999944426
+    },
+    {
+      "model": "Wide & Deep",
+      "params": 97981280,
+      "emb_params": 97899230,
+      "batch": 256,
+      "latency_ms": 1.392171999978018,
+      "us_per_row": 5.438171874914133
+    },
+    {
+      "model": "Wide & Deep",
+      "params": 97981280,
+      "emb_params": 97899230,
+      "batch": 8192,
+      "latency_ms": 9.50707999994241,
+      "us_per_row": 1.16053222655547
+    },
+    {
+      "model": "DeepFM",
+      "params": 97981280,
+      "emb_params": 97899230,
+      "batch": 1,
+      "latency_ms": 0.6167400000049383,
+      "us_per_row": 616.7400000049383
+    },
+    {
+      "model": "DeepFM",
+      "params": 97981280,
+      "emb_params": 97899230,
+      "batch": 256,
+      "latency_ms": 1.712870000010298,
+      "us_per_row": 6.690898437540227
+    },
+    {
+      "model": "DeepFM",
+      "params": 97981280,
+      "emb_params": 97899230,
+      "batch": 8192,
+      "latency_ms": 12.705633333340907,
+      "us_per_row": 1.5509806315113412
+    },
+    {
+      "model": "FI-DeepFM",
+      "params": 98031988,
+      "emb_params": 97899230,
+      "batch": 1,
+      "latency_ms": 1.420219999999972,
+      "us_per_row": 1420.219999999972
+    },
+    {
+      "model": "FI-DeepFM",
+      "params": 98031988,
+      "emb_params": 97899230,
+      "batch": 256,
+      "latency_ms": 6.455705999978818,
+      "us_per_row": 25.217601562417258
+    },
+    {
+      "model": "FI-DeepFM",
+      "params": 98031988,
+      "emb_params": 97899230,
+      "batch": 8192,
+      "latency_ms": 60.09030666670393,
+      "us_per_row": 7.335242513025382
+    },
+    {
+      "model": "HIFI-DeepFM",
+      "params": 98113686,
+      "emb_params": 97899945,
+      "batch": 1,
+      "latency_ms": 1.8857204999949317,
+      "us_per_row": 1885.7204999949317
+    },
+    {
+      "model": "HIFI-DeepFM",
+      "params": 98113686,
+      "emb_params": 97899945,
+      "batch": 256,
+      "latency_ms": 9.354377999989083,
+      "us_per_row": 36.540539062457356
+    },
+    {
+      "model": "HIFI-DeepFM",
+      "params": 98113686,
+      "emb_params": 97899945,
+      "batch": 8192,
+      "latency_ms": 95.22327000001194,
+      "us_per_row": 11.623934326173332
+    }
+  ]
+}

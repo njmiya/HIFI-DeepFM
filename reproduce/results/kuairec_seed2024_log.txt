@@ -1,0 +1,31 @@
+﻿[kuairec] 缓存已存在
+dense 特征已标准化: ['i_author_hist_cnt', 'i_author_hist_ctr', 'i_gap_h', 'i_hist_cnt', 'i_hist_ctr', 'i_upload_days', 'i_video_duration', 'u_a_gap_h', 'u_a_hist_cnt', 'u_a_hist_ctr', 'u_gap_h', 'u_hist_cnt', 'u_hist_ctr']
+特征数: 19, feature_max: {'user_id': 7177, 'item_id': 10729, 'i_author_hist_cnt': 1, 'i_author_hist_ctr': 1, 'i_author_id': 8370, 'i_gap_h': 1, 'i_hist_cnt': 1, 'i_hist_ctr': 1, 'i_music_id': 8496, 'i_upload_days': 1, 'i_video_duration': 1, 'i_video_tag_id': 562, 'i_video_type_c': 3, 'u_a_gap_h': 1, 'u_a_hist_cnt': 1, 'u_a_hist_ctr': 1, 'u_gap_h': 1, 'u_hist_cnt': 1, 'u_hist_ctr': 1}
+  base=8 feats: ['user_id', 'item_id', 'i_author_id', 'i_music_id', 'i_upload_days', 'i_video_duration', 'i_video_tag_id', 'i_video_type_c']
+  diag: {"test_n": 7176, "pos_rate": 0.16429765886287626, "repeat_video_rate": 0.9987458193979933, "repeat_author_rate": 0.32511148272017837, "label_thr": 1.5}
+  已有结果 6 行，本次增量补跑 ['B', 'C'] seeds=[2024]
+
+=== [B] FI-DeepFM seed=2024 ===
+dense 特征已标准化: ['i_author_hist_cnt', 'i_author_hist_ctr', 'i_gap_h', 'i_hist_cnt', 'i_hist_ctr', 'i_upload_days', 'i_video_duration', 'u_a_gap_h', 'u_a_hist_cnt', 'u_a_hist_ctr', 'u_gap_h', 'u_hist_cnt', 'u_hist_ctr']
+特征数: 19, feature_max: {'user_id': 7177, 'item_id': 10729, 'i_author_hist_cnt': 1, 'i_author_hist_ctr': 1, 'i_author_id': 8370, 'i_gap_h': 1, 'i_hist_cnt': 1, 'i_hist_ctr': 1, 'i_music_id': 8496, 'i_upload_days': 1, 'i_video_duration': 1, 'i_video_tag_id': 562, 'i_video_type_c': 3, 'u_a_gap_h': 1, 'u_a_hist_cnt': 1, 'u_a_hist_ctr': 1, 'u_gap_h': 1, 'u_hist_cnt': 1, 'u_hist_ctr': 1}
+      ep1 AUC=0.8295 (90s)
+      ep2 AUC=0.8368 (90s)
+  -> AUC=0.8368 Logloss=0.3367
+
+=== [C] FI-DeepFM+user/video历史 seed=2024 ===
+dense 特征已标准化: ['i_author_hist_cnt', 'i_author_hist_ctr', 'i_gap_h', 'i_hist_cnt', 'i_hist_ctr', 'i_upload_days', 'i_video_duration', 'u_a_gap_h', 'u_a_hist_cnt', 'u_a_hist_ctr', 'u_gap_h', 'u_hist_cnt', 'u_hist_ctr']
+特征数: 19, feature_max: {'user_id': 7177, 'item_id': 10729, 'i_author_hist_cnt': 1, 'i_author_hist_ctr': 1, 'i_author_id': 8370, 'i_gap_h': 1, 'i_hist_cnt': 1, 'i_hist_ctr': 1, 'i_music_id': 8496, 'i_upload_days': 1, 'i_video_duration': 1, 'i_video_tag_id': 562, 'i_video_type_c': 3, 'u_a_gap_h': 1, 'u_a_hist_cnt': 1, 'u_a_hist_ctr': 1, 'u_gap_h': 1, 'u_hist_cnt': 1, 'u_hist_ctr': 1}
+      ep1 AUC=0.8327 (114s)
+      ep2 AUC=0.8365 (113s)
+  -> AUC=0.8365 Logloss=0.3349
+
+======================================================================
+                               auc  logloss
+arm model                                  
+A   DeepFM                  0.8307   0.3399
+B   FI-DeepFM               0.8352   0.3372
+C   FI-DeepFM+user/video历史  0.8363   0.3357
+D   FI-DeepFM+TGH全量         0.8363   0.3384
+
+D vs A: 0.8307 -> 0.8363 (+0.0056, 相对 +0.68%)
+结果已保存: reproduce/results/kuairec_results.csv

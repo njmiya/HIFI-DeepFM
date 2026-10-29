@@ -1,0 +1,8 @@
+experiment,model,seed,auc
+baseline,FM,42,0.7978287701243809
+baseline,WideDeep,42,0.8013666228884746
+baseline,DeepFM,42,0.8041271304193925
+fi_deepfm,FI-DeepFM,42,0.8031204510630555
+fi_deepfm,FI-DeepFM+历史特征,42,0.7937069311593123
+fi_deepfm,FI-DeepFM,2024,0.805092056008741
+fi_deepfm,FI-DeepFM+历史特征,2024,0.7956598403884357

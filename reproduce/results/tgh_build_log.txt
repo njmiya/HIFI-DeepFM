@@ -1,0 +1,6 @@
+﻿[tgh] 构建三粒度 time-aware 特征 ...
+  合并后 3727650 行, 用户 5000, 房间 1298306, 主播 202600
+  train: 3717654 行, 列=['user_id', 'item_id', 'label', 'time', 'timestamp', 'split', 'u_hist_cnt', 'u_hist_ctr', 'i_hist_cnt', 'i_hist_ctr', 'u_gap_h', 'i_gap_h', 'u_s_hist_cnt', 'u_s_hist_ctr', 'u_s_gap_h', 'i_streamer_hist_cnt', 'i_streamer_hist_ctr']
+  dev: 4998 行, 列=['user_id', 'item_id', 'label', 'time', 'timestamp', 'split', 'u_hist_cnt', 'u_hist_ctr', 'i_hist_cnt', 'i_hist_ctr', 'u_gap_h', 'i_gap_h', 'u_s_hist_cnt', 'u_s_hist_ctr', 'u_s_gap_h', 'i_streamer_hist_cnt', 'i_streamer_hist_ctr']
+  test: 4998 行, 列=['user_id', 'item_id', 'label', 'time', 'timestamp', 'split', 'u_hist_cnt', 'u_hist_ctr', 'i_hist_cnt', 'i_hist_ctr', 'u_gap_h', 'i_gap_h', 'u_s_hist_cnt', 'u_s_hist_ctr', 'u_s_gap_h', 'i_streamer_hist_cnt', 'i_streamer_hist_ctr']
+[tgh] 完成

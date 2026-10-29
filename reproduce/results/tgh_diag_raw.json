@@ -1,0 +1,9 @@
+{
+  "test_n": 4998,
+  "pos_rate": 0.19627851140456182,
+  "repeat_room_rate": 0.650860344137655,
+  "repeat_streamer_rate": 0.8215286114445778,
+  "has_user_history_rate": 1.0,
+  "score_pop_spearman_A": -0.8556923547353664,
+  "score_pop_spearman_D": -0.8421402132949527
+}

@@ -1,0 +1,2 @@
+model,seed,auc,logloss
+FI-DeepFM,42,0.925282083215845,0.30430278182029724

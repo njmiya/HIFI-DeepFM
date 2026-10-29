@@ -1,0 +1,58 @@
+﻿[kuairec] 缓存已存在
+dense 特征已标准化: ['i_author_hist_cnt', 'i_author_hist_ctr', 'i_gap_h', 'i_hist_cnt', 'i_hist_ctr', 'i_upload_days', 'i_video_duration', 'u_a_gap_h', 'u_a_hist_cnt', 'u_a_hist_ctr', 'u_gap_h', 'u_hist_cnt', 'u_hist_ctr']
+特征数: 19, feature_max: {'user_id': 7177, 'item_id': 10729, 'i_author_hist_cnt': 1, 'i_author_hist_ctr': 1, 'i_author_id': 8370, 'i_gap_h': 1, 'i_hist_cnt': 1, 'i_hist_ctr': 1, 'i_music_id': 8496, 'i_upload_days': 1, 'i_video_duration': 1, 'i_video_tag_id': 562, 'i_video_type_c': 3, 'u_a_gap_h': 1, 'u_a_hist_cnt': 1, 'u_a_hist_ctr': 1, 'u_gap_h': 1, 'u_hist_cnt': 1, 'u_hist_ctr': 1}
+  base=8 feats: ['user_id', 'item_id', 'i_author_id', 'i_music_id', 'i_upload_days', 'i_video_duration', 'i_video_tag_id', 'i_video_type_c']
+  diag: {"test_n": 7176, "pos_rate": 0.16429765886287626, "repeat_video_rate": 0.5161649944258639, "repeat_author_rate": 0.1978818283166109, "label_thr": 1.5}
+
+=== [A] DeepFM seed=42 ===
+dense 特征已标准化: ['i_author_hist_cnt', 'i_author_hist_ctr', 'i_gap_h', 'i_hist_cnt', 'i_hist_ctr', 'i_upload_days', 'i_video_duration', 'u_a_gap_h', 'u_a_hist_cnt', 'u_a_hist_ctr', 'u_gap_h', 'u_hist_cnt', 'u_hist_ctr']
+特征数: 19, feature_max: {'user_id': 7177, 'item_id': 10729, 'i_author_hist_cnt': 1, 'i_author_hist_ctr': 1, 'i_author_id': 8370, 'i_gap_h': 1, 'i_hist_cnt': 1, 'i_hist_ctr': 1, 'i_music_id': 8496, 'i_upload_days': 1, 'i_video_duration': 1, 'i_video_tag_id': 562, 'i_video_type_c': 3, 'u_a_gap_h': 1, 'u_a_hist_cnt': 1, 'u_a_hist_ctr': 1, 'u_gap_h': 1, 'u_hist_cnt': 1, 'u_hist_ctr': 1}
+      ep1 AUC=0.8261 (72s)
+      ep2 AUC=0.8292 (71s)
+  -> AUC=0.8292 Logloss=0.3405
+
+=== [A] DeepFM seed=2024 ===
+dense 特征已标准化: ['i_author_hist_cnt', 'i_author_hist_ctr', 'i_gap_h', 'i_hist_cnt', 'i_hist_ctr', 'i_upload_days', 'i_video_duration', 'u_a_gap_h', 'u_a_hist_cnt', 'u_a_hist_ctr', 'u_gap_h', 'u_hist_cnt', 'u_hist_ctr']
+特征数: 19, feature_max: {'user_id': 7177, 'item_id': 10729, 'i_author_hist_cnt': 1, 'i_author_hist_ctr': 1, 'i_author_id': 8370, 'i_gap_h': 1, 'i_hist_cnt': 1, 'i_hist_ctr': 1, 'i_music_id': 8496, 'i_upload_days': 1, 'i_video_duration': 1, 'i_video_tag_id': 562, 'i_video_type_c': 3, 'u_a_gap_h': 1, 'u_a_hist_cnt': 1, 'u_a_hist_ctr': 1, 'u_gap_h': 1, 'u_hist_cnt': 1, 'u_hist_ctr': 1}
+      ep1 AUC=0.8281 (71s)
+      ep2 AUC=0.8322 (70s)
+  -> AUC=0.8322 Logloss=0.3393
+
+=== [B] FI-DeepFM seed=42 ===
+dense 特征已标准化: ['i_author_hist_cnt', 'i_author_hist_ctr', 'i_gap_h', 'i_hist_cnt', 'i_hist_ctr', 'i_upload_days', 'i_video_duration', 'u_a_gap_h', 'u_a_hist_cnt', 'u_a_hist_ctr', 'u_gap_h', 'u_hist_cnt', 'u_hist_ctr']
+特征数: 19, feature_max: {'user_id': 7177, 'item_id': 10729, 'i_author_hist_cnt': 1, 'i_author_hist_ctr': 1, 'i_author_id': 8370, 'i_gap_h': 1, 'i_hist_cnt': 1, 'i_hist_ctr': 1, 'i_music_id': 8496, 'i_upload_days': 1, 'i_video_duration': 1, 'i_video_tag_id': 562, 'i_video_type_c': 3, 'u_a_gap_h': 1, 'u_a_hist_cnt': 1, 'u_a_hist_ctr': 1, 'u_gap_h': 1, 'u_hist_cnt': 1, 'u_hist_ctr': 1}
+      ep1 AUC=0.8307 (84s)
+      ep2 AUC=0.8336 (83s)
+  -> AUC=0.8336 Logloss=0.3376
+
+=== [C] FI-DeepFM+user/video历史 seed=42 ===
+dense 特征已标准化: ['i_author_hist_cnt', 'i_author_hist_ctr', 'i_gap_h', 'i_hist_cnt', 'i_hist_ctr', 'i_upload_days', 'i_video_duration', 'u_a_gap_h', 'u_a_hist_cnt', 'u_a_hist_ctr', 'u_gap_h', 'u_hist_cnt', 'u_hist_ctr']
+特征数: 19, feature_max: {'user_id': 7177, 'item_id': 10729, 'i_author_hist_cnt': 1, 'i_author_hist_ctr': 1, 'i_author_id': 8370, 'i_gap_h': 1, 'i_hist_cnt': 1, 'i_hist_ctr': 1, 'i_music_id': 8496, 'i_upload_days': 1, 'i_video_duration': 1, 'i_video_tag_id': 562, 'i_video_type_c': 3, 'u_a_gap_h': 1, 'u_a_hist_cnt': 1, 'u_a_hist_ctr': 1, 'u_gap_h': 1, 'u_hist_cnt': 1, 'u_hist_ctr': 1}
+      ep1 AUC=0.8323 (107s)
+      ep2 AUC=0.8362 (112s)
+  -> AUC=0.8362 Logloss=0.3364
+
+=== [D] FI-DeepFM+TGH全量 seed=42 ===
+dense 特征已标准化: ['i_author_hist_cnt', 'i_author_hist_ctr', 'i_gap_h', 'i_hist_cnt', 'i_hist_ctr', 'i_upload_days', 'i_video_duration', 'u_a_gap_h', 'u_a_hist_cnt', 'u_a_hist_ctr', 'u_gap_h', 'u_hist_cnt', 'u_hist_ctr']
+特征数: 19, feature_max: {'user_id': 7177, 'item_id': 10729, 'i_author_hist_cnt': 1, 'i_author_hist_ctr': 1, 'i_author_id': 8370, 'i_gap_h': 1, 'i_hist_cnt': 1, 'i_hist_ctr': 1, 'i_music_id': 8496, 'i_upload_days': 1, 'i_video_duration': 1, 'i_video_tag_id': 562, 'i_video_type_c': 3, 'u_a_gap_h': 1, 'u_a_hist_cnt': 1, 'u_a_hist_ctr': 1, 'u_gap_h': 1, 'u_hist_cnt': 1, 'u_hist_ctr': 1}
+      ep1 AUC=0.8286 (724s)
+      ep2 AUC=0.8349 (61s)
+  -> AUC=0.8349 Logloss=0.3417
+
+=== [D] FI-DeepFM+TGH全量 seed=2024 ===
+dense 特征已标准化: ['i_author_hist_cnt', 'i_author_hist_ctr', 'i_gap_h', 'i_hist_cnt', 'i_hist_ctr', 'i_upload_days', 'i_video_duration', 'u_a_gap_h', 'u_a_hist_cnt', 'u_a_hist_ctr', 'u_gap_h', 'u_hist_cnt', 'u_hist_ctr']
+特征数: 19, feature_max: {'user_id': 7177, 'item_id': 10729, 'i_author_hist_cnt': 1, 'i_author_hist_ctr': 1, 'i_author_id': 8370, 'i_gap_h': 1, 'i_hist_cnt': 1, 'i_hist_ctr': 1, 'i_music_id': 8496, 'i_upload_days': 1, 'i_video_duration': 1, 'i_video_tag_id': 562, 'i_video_type_c': 3, 'u_a_gap_h': 1, 'u_a_hist_cnt': 1, 'u_a_hist_ctr': 1, 'u_gap_h': 1, 'u_hist_cnt': 1, 'u_hist_ctr': 1}
+      ep1 AUC=0.8285 (162s)
+      ep2 AUC=0.8378 (158s)
+  -> AUC=0.8378 Logloss=0.3350
+
+======================================================================
+                               auc  logloss
+arm model                                  
+A   DeepFM                  0.8307   0.3399
+B   FI-DeepFM               0.8336   0.3376
+C   FI-DeepFM+user/video历史  0.8362   0.3364
+D   FI-DeepFM+TGH全量         0.8363   0.3384
+
+D vs A: 0.8307 -> 0.8363 (+0.0056, 相对 +0.68%)
+结果已保存: reproduce/results/kuairec_results.csv

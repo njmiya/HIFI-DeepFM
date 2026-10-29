@@ -1,0 +1,6 @@
+﻿[hist] 缓存已存在，跳过构建
+dense 特征已标准化: ['i_end_timestamp', 'i_hist_cnt', 'i_hist_ctr', 'i_start_timestamp', 'u_hist_cnt', 'u_hist_ctr']
+特征数: 24, feature_max: {'user_id': 5001, 'item_id': 1298307, 'i_country_c': 63, 'i_device_brand_c': 52, 'i_end_timestamp': 1, 'i_gender_c': 4, 'i_hist_cnt': 1, 'i_hist_ctr': 1, 'i_live_content_category_c': 5, 'i_live_operation_tag_c': 15, 'i_live_type_c': 6, 'i_start_timestamp': 1, 'i_streamer_id': 202601, 'u_accu_watch_live_cnt_c': 6, 'u_accu_watch_live_duration_c': 7, 'u_age_c': 8, 'u_country_c': 11, 'u_device_brand_c': 33, 'u_device_price_c': 6, 'u_fans_num_c': 7, 'u_follow_num_c': 5, 'u_gender_c': 3, 'u_hist_cnt': 1, 'u_hist_ctr': 1}
+device=cuda  训练子集=1505371/3763427  低活跃阈值<487
+
+=== FI-DeepFM seed=42 ===

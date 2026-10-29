@@ -1,0 +1,2 @@
+n_users,n_streamers,n_rooms,n_samples_total,n_train,n_test,n_click_pos,n_neg,n_like,n_gift,train_ctr,test_ctr
+2000,800,24000,150000,121696,28304,57327,92673,8729,2204,0.373,0.4216

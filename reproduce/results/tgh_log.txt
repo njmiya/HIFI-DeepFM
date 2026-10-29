@@ -1,0 +1,78 @@
+﻿dense 特征已标准化: ['i_end_timestamp', 'i_gap_h', 'i_hist_cnt', 'i_hist_ctr', 'i_start_timestamp', 'i_streamer_hist_cnt', 'i_streamer_hist_ctr', 'u_gap_h', 'u_hist_cnt', 'u_hist_ctr', 'u_s_gap_h', 'u_s_hist_cnt', 'u_s_hist_ctr']
+特征数: 31, feature_max: {'user_id': 5001, 'item_id': 1298307, 'i_country_c': 63, 'i_device_brand_c': 52, 'i_end_timestamp': 1, 'i_gap_h': 1, 'i_gender_c': 4, 'i_hist_cnt': 1, 'i_hist_ctr': 1, 'i_live_content_category_c': 5, 'i_live_operation_tag_c': 15, 'i_live_type_c': 6, 'i_start_timestamp': 1, 'i_streamer_hist_cnt': 1, 'i_streamer_hist_ctr': 1, 'i_streamer_id': 202601, 'u_accu_watch_live_cnt_c': 6, 'u_accu_watch_live_duration_c': 7, 'u_age_c': 8, 'u_country_c': 11, 'u_device_brand_c': 33, 'u_device_price_c': 6, 'u_fans_num_c': 7, 'u_follow_num_c': 5, 'u_gap_h': 1, 'u_gender_c': 3, 'u_hist_cnt': 1, 'u_hist_ctr': 1, 'u_s_gap_h': 1, 'u_s_hist_cnt': 1, 'u_s_hist_ctr': 1}
+
+=== [A] DeepFM seed=42 ===
+dense 特征已标准化: ['i_end_timestamp', 'i_gap_h', 'i_hist_cnt', 'i_hist_ctr', 'i_start_timestamp', 'i_streamer_hist_cnt', 'i_streamer_hist_ctr', 'u_gap_h', 'u_hist_cnt', 'u_hist_ctr', 'u_s_gap_h', 'u_s_hist_cnt', 'u_s_hist_ctr']
+特征数: 31, feature_max: {'user_id': 5001, 'item_id': 1298307, 'i_country_c': 63, 'i_device_brand_c': 52, 'i_end_timestamp': 1, 'i_gap_h': 1, 'i_gender_c': 4, 'i_hist_cnt': 1, 'i_hist_ctr': 1, 'i_live_content_category_c': 5, 'i_live_operation_tag_c': 15, 'i_live_type_c': 6, 'i_start_timestamp': 1, 'i_streamer_hist_cnt': 1, 'i_streamer_hist_ctr': 1, 'i_streamer_id': 202601, 'u_accu_watch_live_cnt_c': 6, 'u_accu_watch_live_duration_c': 7, 'u_age_c': 8, 'u_country_c': 11, 'u_device_brand_c': 33, 'u_device_price_c': 6, 'u_fans_num_c': 7, 'u_follow_num_c': 5, 'u_gap_h': 1, 'u_gender_c': 3, 'u_hist_cnt': 1, 'u_hist_ctr': 1, 'u_s_gap_h': 1, 'u_s_hist_cnt': 1, 'u_s_hist_ctr': 1}
+      ep1 AUC=0.9060 (46s)
+      ep2 AUC=0.9054 (47s)
+  -> AUC=0.9060 Logloss=0.3064 已保存 E:\kuailive_project\KuaiLive直播推荐实验\reproduce\results\tgh_results.csv
+
+=== [A] DeepFM seed=2024 ===
+dense 特征已标准化: ['i_end_timestamp', 'i_gap_h', 'i_hist_cnt', 'i_hist_ctr', 'i_start_timestamp', 'i_streamer_hist_cnt', 'i_streamer_hist_ctr', 'u_gap_h', 'u_hist_cnt', 'u_hist_ctr', 'u_s_gap_h', 'u_s_hist_cnt', 'u_s_hist_ctr']
+特征数: 31, feature_max: {'user_id': 5001, 'item_id': 1298307, 'i_country_c': 63, 'i_device_brand_c': 52, 'i_end_timestamp': 1, 'i_gap_h': 1, 'i_gender_c': 4, 'i_hist_cnt': 1, 'i_hist_ctr': 1, 'i_live_content_category_c': 5, 'i_live_operation_tag_c': 15, 'i_live_type_c': 6, 'i_start_timestamp': 1, 'i_streamer_hist_cnt': 1, 'i_streamer_hist_ctr': 1, 'i_streamer_id': 202601, 'u_accu_watch_live_cnt_c': 6, 'u_accu_watch_live_duration_c': 7, 'u_age_c': 8, 'u_country_c': 11, 'u_device_brand_c': 33, 'u_device_price_c': 6, 'u_fans_num_c': 7, 'u_follow_num_c': 5, 'u_gap_h': 1, 'u_gender_c': 3, 'u_hist_cnt': 1, 'u_hist_ctr': 1, 'u_s_gap_h': 1, 'u_s_hist_cnt': 1, 'u_s_hist_ctr': 1}
+      ep1 AUC=0.9062 (48s)
+      ep2 AUC=0.9059 (48s)
+  -> AUC=0.9062 Logloss=0.3006 已保存 E:\kuailive_project\KuaiLive直播推荐实验\reproduce\results\tgh_results.csv
+
+=== [B] FI-DeepFM seed=42 ===
+dense 特征已标准化: ['i_end_timestamp', 'i_gap_h', 'i_hist_cnt', 'i_hist_ctr', 'i_start_timestamp', 'i_streamer_hist_cnt', 'i_streamer_hist_ctr', 'u_gap_h', 'u_hist_cnt', 'u_hist_ctr', 'u_s_gap_h', 'u_s_hist_cnt', 'u_s_hist_ctr']
+特征数: 31, feature_max: {'user_id': 5001, 'item_id': 1298307, 'i_country_c': 63, 'i_device_brand_c': 52, 'i_end_timestamp': 1, 'i_gap_h': 1, 'i_gender_c': 4, 'i_hist_cnt': 1, 'i_hist_ctr': 1, 'i_live_content_category_c': 5, 'i_live_operation_tag_c': 15, 'i_live_type_c': 6, 'i_start_timestamp': 1, 'i_streamer_hist_cnt': 1, 'i_streamer_hist_ctr': 1, 'i_streamer_id': 202601, 'u_accu_watch_live_cnt_c': 6, 'u_accu_watch_live_duration_c': 7, 'u_age_c': 8, 'u_country_c': 11, 'u_device_brand_c': 33, 'u_device_price_c': 6, 'u_fans_num_c': 7, 'u_follow_num_c': 5, 'u_gap_h': 1, 'u_gender_c': 3, 'u_hist_cnt': 1, 'u_hist_ctr': 1, 'u_s_gap_h': 1, 'u_s_hist_cnt': 1, 'u_s_hist_ctr': 1}
+      ep1 AUC=0.9178 (55s)
+      ep2 AUC=0.9045 (54s)
+  -> AUC=0.9178 Logloss=0.3025 已保存 E:\kuailive_project\KuaiLive直播推荐实验\reproduce\results\tgh_results.csv
+
+=== [B] FI-DeepFM seed=2024 ===
+dense 特征已标准化: ['i_end_timestamp', 'i_gap_h', 'i_hist_cnt', 'i_hist_ctr', 'i_start_timestamp', 'i_streamer_hist_cnt', 'i_streamer_hist_ctr', 'u_gap_h', 'u_hist_cnt', 'u_hist_ctr', 'u_s_gap_h', 'u_s_hist_cnt', 'u_s_hist_ctr']
+特征数: 31, feature_max: {'user_id': 5001, 'item_id': 1298307, 'i_country_c': 63, 'i_device_brand_c': 52, 'i_end_timestamp': 1, 'i_gap_h': 1, 'i_gender_c': 4, 'i_hist_cnt': 1, 'i_hist_ctr': 1, 'i_live_content_category_c': 5, 'i_live_operation_tag_c': 15, 'i_live_type_c': 6, 'i_start_timestamp': 1, 'i_streamer_hist_cnt': 1, 'i_streamer_hist_ctr': 1, 'i_streamer_id': 202601, 'u_accu_watch_live_cnt_c': 6, 'u_accu_watch_live_duration_c': 7, 'u_age_c': 8, 'u_country_c': 11, 'u_device_brand_c': 33, 'u_device_price_c': 6, 'u_fans_num_c': 7, 'u_follow_num_c': 5, 'u_gap_h': 1, 'u_gender_c': 3, 'u_hist_cnt': 1, 'u_hist_ctr': 1, 'u_s_gap_h': 1, 'u_s_hist_cnt': 1, 'u_s_hist_ctr': 1}
+      ep1 AUC=0.9149 (54s)
+      ep2 AUC=0.9059 (54s)
+  -> AUC=0.9149 Logloss=0.2794 已保存 E:\kuailive_project\KuaiLive直播推荐实验\reproduce\results\tgh_results.csv
+
+=== [C] FI-DeepFM+user/room历史 seed=42 ===
+dense 特征已标准化: ['i_end_timestamp', 'i_gap_h', 'i_hist_cnt', 'i_hist_ctr', 'i_start_timestamp', 'i_streamer_hist_cnt', 'i_streamer_hist_ctr', 'u_gap_h', 'u_hist_cnt', 'u_hist_ctr', 'u_s_gap_h', 'u_s_hist_cnt', 'u_s_hist_ctr']
+特征数: 31, feature_max: {'user_id': 5001, 'item_id': 1298307, 'i_country_c': 63, 'i_device_brand_c': 52, 'i_end_timestamp': 1, 'i_gap_h': 1, 'i_gender_c': 4, 'i_hist_cnt': 1, 'i_hist_ctr': 1, 'i_live_content_category_c': 5, 'i_live_operation_tag_c': 15, 'i_live_type_c': 6, 'i_start_timestamp': 1, 'i_streamer_hist_cnt': 1, 'i_streamer_hist_ctr': 1, 'i_streamer_id': 202601, 'u_accu_watch_live_cnt_c': 6, 'u_accu_watch_live_duration_c': 7, 'u_age_c': 8, 'u_country_c': 11, 'u_device_brand_c': 33, 'u_device_price_c': 6, 'u_fans_num_c': 7, 'u_follow_num_c': 5, 'u_gap_h': 1, 'u_gender_c': 3, 'u_hist_cnt': 1, 'u_hist_ctr': 1, 'u_s_gap_h': 1, 'u_s_hist_cnt': 1, 'u_s_hist_ctr': 1}
+      ep1 AUC=0.9267 (57s)
+      ep2 AUC=0.9163 (57s)
+  -> AUC=0.9267 Logloss=0.2747 已保存 E:\kuailive_project\KuaiLive直播推荐实验\reproduce\results\tgh_results.csv
+
+=== [C] FI-DeepFM+user/room历史 seed=2024 ===
+dense 特征已标准化: ['i_end_timestamp', 'i_gap_h', 'i_hist_cnt', 'i_hist_ctr', 'i_start_timestamp', 'i_streamer_hist_cnt', 'i_streamer_hist_ctr', 'u_gap_h', 'u_hist_cnt', 'u_hist_ctr', 'u_s_gap_h', 'u_s_hist_cnt', 'u_s_hist_ctr']
+特征数: 31, feature_max: {'user_id': 5001, 'item_id': 1298307, 'i_country_c': 63, 'i_device_brand_c': 52, 'i_end_timestamp': 1, 'i_gap_h': 1, 'i_gender_c': 4, 'i_hist_cnt': 1, 'i_hist_ctr': 1, 'i_live_content_category_c': 5, 'i_live_operation_tag_c': 15, 'i_live_type_c': 6, 'i_start_timestamp': 1, 'i_streamer_hist_cnt': 1, 'i_streamer_hist_ctr': 1, 'i_streamer_id': 202601, 'u_accu_watch_live_cnt_c': 6, 'u_accu_watch_live_duration_c': 7, 'u_age_c': 8, 'u_country_c': 11, 'u_device_brand_c': 33, 'u_device_price_c': 6, 'u_fans_num_c': 7, 'u_follow_num_c': 5, 'u_gap_h': 1, 'u_gender_c': 3, 'u_hist_cnt': 1, 'u_hist_ctr': 1, 'u_s_gap_h': 1, 'u_s_hist_cnt': 1, 'u_s_hist_ctr': 1}
+      ep1 AUC=0.9287 (46s)
+      ep2 AUC=0.9002 (61s)
+  -> AUC=0.9287 Logloss=0.2596 已保存 E:\kuailive_project\KuaiLive直播推荐实验\reproduce\results\tgh_results.csv
+
+=== [D] FI-DeepFM+TGH全量 seed=42 ===
+dense 特征已标准化: ['i_end_timestamp', 'i_gap_h', 'i_hist_cnt', 'i_hist_ctr', 'i_start_timestamp', 'i_streamer_hist_cnt', 'i_streamer_hist_ctr', 'u_gap_h', 'u_hist_cnt', 'u_hist_ctr', 'u_s_gap_h', 'u_s_hist_cnt', 'u_s_hist_ctr']
+特征数: 31, feature_max: {'user_id': 5001, 'item_id': 1298307, 'i_country_c': 63, 'i_device_brand_c': 52, 'i_end_timestamp': 1, 'i_gap_h': 1, 'i_gender_c': 4, 'i_hist_cnt': 1, 'i_hist_ctr': 1, 'i_live_content_category_c': 5, 'i_live_operation_tag_c': 15, 'i_live_type_c': 6, 'i_start_timestamp': 1, 'i_streamer_hist_cnt': 1, 'i_streamer_hist_ctr': 1, 'i_streamer_id': 202601, 'u_accu_watch_live_cnt_c': 6, 'u_accu_watch_live_duration_c': 7, 'u_age_c': 8, 'u_country_c': 11, 'u_device_brand_c': 33, 'u_device_price_c': 6, 'u_fans_num_c': 7, 'u_follow_num_c': 5, 'u_gap_h': 1, 'u_gender_c': 3, 'u_hist_cnt': 1, 'u_hist_ctr': 1, 'u_s_gap_h': 1, 'u_s_hist_cnt': 1, 'u_s_hist_ctr': 1}
+      ep1 AUC=0.9357 (65s)
+      ep2 AUC=0.9369 (65s)
+  -> AUC=0.9369 Logloss=0.2786 已保存 E:\kuailive_project\KuaiLive直播推荐实验\reproduce\results\tgh_results.csv
+
+=== [D] FI-DeepFM+TGH全量 seed=2024 ===
+dense 特征已标准化: ['i_end_timestamp', 'i_gap_h', 'i_hist_cnt', 'i_hist_ctr', 'i_start_timestamp', 'i_streamer_hist_cnt', 'i_streamer_hist_ctr', 'u_gap_h', 'u_hist_cnt', 'u_hist_ctr', 'u_s_gap_h', 'u_s_hist_cnt', 'u_s_hist_ctr']
+特征数: 31, feature_max: {'user_id': 5001, 'item_id': 1298307, 'i_country_c': 63, 'i_device_brand_c': 52, 'i_end_timestamp': 1, 'i_gap_h': 1, 'i_gender_c': 4, 'i_hist_cnt': 1, 'i_hist_ctr': 1, 'i_live_content_category_c': 5, 'i_live_operation_tag_c': 15, 'i_live_type_c': 6, 'i_start_timestamp': 1, 'i_streamer_hist_cnt': 1, 'i_streamer_hist_ctr': 1, 'i_streamer_id': 202601, 'u_accu_watch_live_cnt_c': 6, 'u_accu_watch_live_duration_c': 7, 'u_age_c': 8, 'u_country_c': 11, 'u_device_brand_c': 33, 'u_device_price_c': 6, 'u_fans_num_c': 7, 'u_follow_num_c': 5, 'u_gap_h': 1, 'u_gender_c': 3, 'u_hist_cnt': 1, 'u_hist_ctr': 1, 'u_s_gap_h': 1, 'u_s_hist_cnt': 1, 'u_s_hist_ctr': 1}
+      ep1 AUC=0.9401 (68s)
+      ep2 AUC=0.9403 (67s)
+  -> AUC=0.9403 Logloss=0.3216 已保存 E:\kuailive_project\KuaiLive直播推荐实验\reproduce\results\tgh_results.csv
+
+=== [E] FI-DeepFM+TGH+HMR seed=42 ===
+dense 特征已标准化: ['i_end_timestamp', 'i_gap_h', 'i_hist_cnt', 'i_hist_ctr', 'i_start_timestamp', 'i_streamer_hist_cnt', 'i_streamer_hist_ctr', 'u_gap_h', 'u_hist_cnt', 'u_hist_ctr', 'u_s_gap_h', 'u_s_hist_cnt', 'u_s_hist_ctr']
+特征数: 31, feature_max: {'user_id': 5001, 'item_id': 1298307, 'i_country_c': 63, 'i_device_brand_c': 52, 'i_end_timestamp': 1, 'i_gap_h': 1, 'i_gender_c': 4, 'i_hist_cnt': 1, 'i_hist_ctr': 1, 'i_live_content_category_c': 5, 'i_live_operation_tag_c': 15, 'i_live_type_c': 6, 'i_start_timestamp': 1, 'i_streamer_hist_cnt': 1, 'i_streamer_hist_ctr': 1, 'i_streamer_id': 202601, 'u_accu_watch_live_cnt_c': 6, 'u_accu_watch_live_duration_c': 7, 'u_age_c': 8, 'u_country_c': 11, 'u_device_brand_c': 33, 'u_device_price_c': 6, 'u_fans_num_c': 7, 'u_follow_num_c': 5, 'u_gap_h': 1, 'u_gender_c': 3, 'u_hist_cnt': 1, 'u_hist_ctr': 1, 'u_s_gap_h': 1, 'u_s_hist_cnt': 1, 'u_s_hist_ctr': 1}
+      ep1 AUC=0.9357 (68s)
+      ep2 AUC=0.9369 (67s)
+  -> AUC=0.9369 Logloss=0.2786 已保存 E:\kuailive_project\KuaiLive直播推荐实验\reproduce\results\tgh_results.csv
+
+======================================================================
+                              auc  logloss
+arm model                                 
+A   DeepFM                 0.9061   0.3035
+B   FI-DeepFM              0.9164   0.2910
+C   FI-DeepFM+user/room历史  0.9277   0.2672
+D   FI-DeepFM+TGH全量        0.9386   0.3001
+E   FI-DeepFM+TGH+HMR      0.9369   0.2786
+
+D vs A 整体 AUC: 0.9061 -> 0.9386  (+0.0325, 相对 +3.59%)
+
+明细: E:\kuailive_project\KuaiLive直播推荐实验\reproduce\results\tgh_results.csv

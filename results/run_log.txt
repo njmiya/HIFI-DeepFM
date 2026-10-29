@@ -1,0 +1,71 @@
+加载处理后数据 ...
+
+[Model 1/6] Logistic Regression (sklearn) ...
+    LR  test AUC=0.6223  LogLoss=0.6359
+
+[Model 2/6] MLP ...
+    epoch 01 loss=0.6332  test AUC=0.6260
+    epoch 02 loss=0.6184  test AUC=0.6375
+    epoch 04 loss=0.6128  test AUC=0.6430
+    epoch 06 loss=0.6108  test AUC=0.6429
+    early stop at epoch 7
+    MLP test AUC=0.6430  LogLoss=0.6245
+
+[Model 3/6] Wide&Deep ...
+    epoch 01 loss=0.6468  test AUC=0.6257
+    epoch 02 loss=0.6176  test AUC=0.6409
+    epoch 04 loss=0.6121  test AUC=0.6431
+    epoch 06 loss=0.6104  test AUC=0.6422
+    epoch 08 loss=0.6094  test AUC=0.6438
+    early stop at epoch 8
+    W&D  test AUC=0.6440  LogLoss=0.6238
+
+[Model 4/6] Ours (full: multitask + timedecay + DIN) ...
+    epoch 01 loss=0.8629  test AUC=0.6185
+    epoch 02 loss=0.7183  test AUC=0.6326
+    epoch 04 loss=0.7021  test AUC=0.6436
+    epoch 06 loss=0.6976  test AUC=0.6442
+    epoch 08 loss=0.6960  test AUC=0.6443
+    epoch 10 loss=0.6947  test AUC=0.6418
+    Ours test AUC=0.6443  LogLoss=0.6236  likeAUC=0.5856  giftAUC=0.5940
+
+[Model 5/6] Ablation: Ours w/o TimeDecay ...
+    epoch 01 loss=0.8014  test AUC=0.6132
+    epoch 02 loss=0.7105  test AUC=0.6328
+    epoch 04 loss=0.6995  test AUC=0.6420
+    epoch 06 loss=0.6959  test AUC=0.6435
+    epoch 08 loss=0.6946  test AUC=0.6435
+    epoch 10 loss=0.6931  test AUC=0.6433
+
+[Model 6/6] Ablation: Ours w/o DIN ...
+    epoch 01 loss=0.8287  test AUC=0.6224
+    epoch 02 loss=0.7177  test AUC=0.6375
+    epoch 04 loss=0.7021  test AUC=0.6439
+    epoch 06 loss=0.6984  test AUC=0.6444
+    epoch 08 loss=0.6963  test AUC=0.6452
+    epoch 10 loss=0.6953  test AUC=0.6439
+    early stop at epoch 10
+
+[Ablation] Ours w/o Multitask (CTR only) ...
+    epoch 01 loss=0.6435  test AUC=0.6174
+    epoch 02 loss=0.6201  test AUC=0.6346
+    epoch 04 loss=0.6131  test AUC=0.6427
+    epoch 06 loss=0.6102  test AUC=0.6421
+    epoch 08 loss=0.6093  test AUC=0.6400
+    early stop at epoch 8
+
+============================================================
+主实验结果：
+   model      auc  logloss  like_auc  gift_auc
+      LR 0.622269 0.635944       NaN       NaN
+     MLP 0.642962 0.624529       NaN       NaN
+WideDeep 0.644005 0.623804       NaN       NaN
+    Ours 0.644293 0.623626   0.58556  0.594034
+
+消融实验：
+            model      auc  logloss  like_auc  gift_auc
+ Ors_wo_TimeDecay 0.643535 0.624900  0.591590  0.565395
+      Ours_wo_DIN 0.645233 0.624078  0.590225  0.555923
+Ours_wo_Multitask 0.642732 0.625149       NaN       NaN
+
+总耗时 213.6s

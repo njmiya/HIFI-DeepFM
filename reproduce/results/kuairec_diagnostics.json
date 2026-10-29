@@ -1,0 +1,7 @@
+{
+  "test_n": 7176,
+  "pos_rate": 0.16429765886287626,
+  "repeat_video_rate": 0.9987458193979933,
+  "repeat_author_rate": 0.32511148272017837,
+  "label_thr": 1.5
+}

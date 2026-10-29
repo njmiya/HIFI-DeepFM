@@ -1,0 +1,2 @@
+model,seed,auc,logloss
+WideDeep,42,0.9080768465345826,0.30630964040756226
